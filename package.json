@@ -26,9 +26,12 @@
     "@nuxtjs/workbox": "^3.0.0-beta.14",
     "cross-env": "^5.2.0",
     "nuxt": "^2.4.0",
+    "vee-validate": "^2.1.7",
+    "nuxt-material-design-icons": "^1.0.4",
     "typeface-source-sans-pro": "0.0.54",
     "vuetify": "^1.5.5",
-    "vuetify-loader": "^1.2.1"
+    "vuetify-loader": "^1.2.1",
+    "vuex-persistedstate": "^2.5.4"
   },
   "devDependencies": {
     "nodemon": "^1.18.9",

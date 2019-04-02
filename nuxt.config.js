@@ -30,7 +30,12 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/vuetify'],
+  plugins: [
+    '@/plugins/vuetify',
+    '@/plugins/axios',
+    '@/plugins/vee-validate',
+    '@/plugins/localStorage'
+  ],
 
   /*
    ** Nuxt.js modules
@@ -38,13 +43,21 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    'nuxt-material-design-icons'
   ],
   /*
    ** Axios module configuration
    */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+    baseURL:
+      process.env.NODE_ENV === 'production'
+        ? ''
+        : process.env.NODE_ENV === 'staging'
+        ? 'http://188.166.190.42:3000/api'
+        : 'http://localhost:3000/api',
+    https: process.env.NODE_ENV === 'production'
   },
 
   /*

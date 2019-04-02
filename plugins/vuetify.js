@@ -7,7 +7,7 @@ Vue.use(Vuetify, {
     primary: colors.blue.darken2,
     accent: colors.grey.darken3,
     secondary: colors.amber.darken3,
-    info: colors.teal.lighten1,
+    info: '#00D8A6',
     warning: colors.amber.base,
     error: colors.deepOrange.accent4,
     success: colors.green.accent3
