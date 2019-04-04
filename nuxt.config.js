@@ -91,11 +91,11 @@ export default {
    */
   manifest: {
     name: 'Syaamil Pay',
-    short_name: 'SP-PWA',
-    description: 'Syaamil Pay',
+    short_name: 'Syaamil Pay Lite',
+    description: 'Syaamil Pay Lite Version for Mobile',
     display: 'standalone',
     orientation: 'portrait',
-    background_color: '#ffffff',
+    background_color: '#00D8A6',
     theme_color: '#027be3',
     icons: [
       {
